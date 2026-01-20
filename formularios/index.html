@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+
+    <form>
+        <!-- Campo de texto -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Ex.: João Assoni">
+        <br><br>
+
+        <!-- Campo de email -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required placeholder="email@email.com">
+        <br><br>
+
+        <!-- Campo de senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <!-- Campo de seleção radio -->
+        <label>Gênero:</label><br>
+        <input type="radio" name="genero" id="masculino" value="m">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino" value="f">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="mix" value="v">
+        <label for="mix">Vascaíno</label>
+        <br><br>
+
+        <!-- Campo de seleção múltipla (checkbox) -->
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="Twice" value="Twice" name="interesses">
+        <label for="Twice">Twice</label>
+        <input type="checkbox" id="canetaAzul" value="canetaAzul" name="interesses">
+        <label for="canetaAzul">Caneta Azul</label>
+        <input type="checkbox" id="JonasBrothers" value="JonasBrothers" name="interesses">
+        <label for="JonasBrothers">Jonas Brothers</label>
+        <br><br>
+
+        <!-- Campo de data -->
+        <label for="DataDeNascimento">Data de Nascimento:</label>
+        <input type="date" id="DataDeNascimento" name="DataDeNascimento">
+        <br><br>
+
+        <!-- Campo de arquivo (uploads) -->
+        <label for="FotoDePerfil">Foto de Perfil:</label>
+        <input type="file" id="FotoDePerfil" name="avatar">
+        <br><br>
+
+        <!-- Campo de caixa de seleção -->
+        <label for="situacao">Situação Atual:</label>
+        <select name="situacao" id="situacao">
+            <option value="" selected disabled>Selecionar</option>
+            <option value="estudante">Estudando para me tornar um programador</option>
+            <option value="estagiario">Atuando como estagiário/trainee</option>
+            <option value="junior">Atuando como desenvolvedor júnior</option>
+            <option value="pleno">Atuando como desenvolvedor pleno</option>
+            <option value="senior">Atuando como desenvolvedor sênior</option>
+        </select>
+        <br><br>
+
+        <!-- Campo de área de texto de múltiplas linhas -->
+        <label for="sobre">Sobre mim:</label>
+        <textarea name="sobre" id="sobre" cols="40" rows="6" placeholder="Fale um pouco sobre você!"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
